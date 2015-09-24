@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Example"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="WPF-Example" Height="249" Width="275">
     <Grid>
-        
+        <TextBox x:Name="first" HorizontalAlignment="Left" Height="23" Margin="83,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="First" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="middle" HorizontalAlignment="Left" Height="23" Margin="83,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37"/>
+        <Label x:Name="label_Copy" Content="M.I." HorizontalAlignment="Left" Margin="40,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="last" HorizontalAlignment="Left" Height="23" Margin="83,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy1" Content="Last" HorizontalAlignment="Left" Margin="40,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="83,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy2" Content="Email" HorizontalAlignment="Left" Margin="40,103,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy3" Content="Gender" HorizontalAlignment="Left" Margin="40,135,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton" Content="Male" HorizontalAlignment="Left" Margin="94,140,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton_Copy" Content="Female" HorizontalAlignment="Left" Margin="158,140,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="128,177,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
+        <Button x:Name="btnDisplay" Content="Display" HorizontalAlignment="Left" Margin="40,177,0,0" VerticalAlignment="Top" Width="75" Click="btnDisplay_Click"/>
+
     </Grid>
 </Window>

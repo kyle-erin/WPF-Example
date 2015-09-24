@@ -10,31 +10,30 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WPF_Example
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for SaveWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SaveWindow : Window
     {
-        public MainWindow()
+        public SaveWindow(string first, string mi, string last)
         {
             InitializeComponent();
         }
 
-        private void btnSave_Click(object sender, RoutedEventArgs e)
+        private void btnCancelClick(object sender, RoutedEventArgs e)
         {
-            // Display save comfirm dialog
-            SaveWindow window = new SaveWindow(first.Text, middle.Text, last.Text);
-            window.Show();
+            // Don't save, close
+            this.Close();
         }
 
-        private void btnDisplay_Click(object sender, RoutedEventArgs e)
+        private void btnConfirmClick(object sender, RoutedEventArgs e)
         {
-            // Display saved content
+            // Save data, close
+            this.Close();
         }
     }
 }
