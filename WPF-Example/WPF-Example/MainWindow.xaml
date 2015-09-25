@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Example"
+        ResizeMode="NoResize"
         mc:Ignorable="d"
         Title="WPF-Example" Height="249" Width="275">
     <Grid>
@@ -16,8 +17,8 @@
         <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" Margin="83,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="label_Copy2" Content="Email" HorizontalAlignment="Left" Margin="40,103,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy3" Content="Gender" HorizontalAlignment="Left" Margin="40,135,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton" Content="Male" HorizontalAlignment="Left" Margin="94,140,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton_Copy" Content="Female" HorizontalAlignment="Left" Margin="158,140,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rMale" Content="Male" HorizontalAlignment="Left" Margin="94,140,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rFemale" Content="Female" HorizontalAlignment="Left" Margin="158,140,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="128,177,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
         <Button x:Name="btnDisplay" Content="Display" HorizontalAlignment="Left" Margin="40,177,0,0" VerticalAlignment="Top" Width="75" Click="btnDisplay_Click"/>
 
