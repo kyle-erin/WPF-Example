@@ -19,9 +19,13 @@ namespace WPF_Example
     /// </summary>
     public partial class SaveWindow : Window
     {
-        public SaveWindow(string first, string mi, string last)
+        // User information to save
+        private UserInfo mInfo;
+
+        public SaveWindow(string first, string mi, string last, string email, string gender)
         {
             InitializeComponent();
+            mInfo = new UserInfo(first, mi, last, email, gender);
         }
 
         private void btnCancelClick(object sender, RoutedEventArgs e)
@@ -33,6 +37,7 @@ namespace WPF_Example
         private void btnConfirmClick(object sender, RoutedEventArgs e)
         {
             // Save data, close
+            Storage.Instance.saveInfo(mInfo);
             this.Close();
         }
     }
